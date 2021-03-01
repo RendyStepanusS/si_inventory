@@ -15,13 +15,12 @@ class Ruangan_model extends CI_Model
   public function getlantai()
   {
     $this->db->select_max('jml_lantai');
-    // $this->db->distinct();
-    // $this->db->order_by('jml_lantai', 'ASC');
     return $this->db->get($this->tabeljoin)->result_array();
   }
 
   public function getID($id)
   {
+    $this->db->join($this->tabeljoin, $this->table . '.kode_gedung=' . $this->tabeljoin . '.kode_gedung');
     return $this->db->get_where($this->table, [$this->id => $id])->row_array();
   }
 

@@ -52,9 +52,9 @@ class Ruangan extends CI_Controller
     $data['send_data']['breadcumb1'] = 'Data Master';
     $data['send_data']['breadcumb2'] = 'Ubah Data Ruangan';
 
-    $data['ruangan'] = $this->m_ruangan->getID($id);
-    $data['gedung'] = $this->m_gedung->getAll();
-    $data['getlantai'] = $this->m_ruangan->getlantai();
+    $data['send_data']['ruangan'] = $this->m_ruangan->getID($id);
+    $data['send_data']['gedung'] = $this->m_gedung->getAll();
+    $data['send_data']['getlantai'] = $this->m_ruangan->getlantai();
 
     $this->form_validation->set_rules('kode_ruangan', 'Kode ruangan', 'required');
     $this->form_validation->set_rules('nama_ruangan', 'Nama ruangan', 'required');

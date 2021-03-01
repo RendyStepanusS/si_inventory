@@ -50,11 +50,18 @@
                           <div class="col-lg-4">
                             <div class="form-select-list">
                               <select class="form-control custom-select-value" name="kode_gedung">
-                                <option><?= $ruangan['kode_gedung']; ?></option>
+                                <!-- <option><?= $ruangan['nama_gedung']; ?></option> -->
                                 <option>-- Pilih Gedung --</option>
-                                <?php foreach ($gedung as $g) : ?>
-                                  <option value="<?= $g['kode_gedung']; ?>"><?= $g['nama_gedung']; ?></option>
-                                <?php endforeach; ?>
+                                <?php foreach ($gedung as $g) {
+                                  if ($g['kode_gedung'] == $ruangan['kode_gedung']) {
+                                    $selected = 'selected';
+                                  } else {
+                                    $selected = "";
+                                  }
+                                ?>
+
+                                  <option value="<?= $g['kode_gedung']; ?>" <?php echo $selected; ?>><?= $g['nama_gedung']; ?></option>
+                                <?php } ?>
                               </select>
                             </div>
                           </div>
@@ -69,7 +76,7 @@
                           <div class="col-lg-4">
 
                             <select class="form-control custom-select-value" name="lantai">
-                              <option>Lantai <?= $g['jml_lantai']; ?></option>
+                              <option value="<?= $g['jml_lantai']; ?>">Lantai <?= $g['jml_lantai']; ?></option>
                               <option>-- Pilih Lantai --</option>
                               <?php foreach ($getlantai as $g) : ?>
                                 <?php $lantai = $g['jml_lantai']; ?>
