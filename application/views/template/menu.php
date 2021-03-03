@@ -17,10 +17,9 @@
         <!-- Menu data master -->
         <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fa big-icon fa-database"></i> <span class="mini-dn">Data Master</span> <span class="indicator-right-menu mini-dn"><i class="fa indicator-mn fa-angle-left"></i></span></a>
           <div role="menu" class="dropdown-menu left-menu-dropdown animated flipInX">
-            <a href="" class="dropdown-item">Data Barang</a>
-            <a href="" class="dropdown-item">Data Kategori</a>
-            <a href="<?= base_url(); ?>ruangan" class="dropdown-item">Data Ruangan</a>
-            <a href="<?= base_url(); ?>gedung" class="dropdown-item">Data Gedung</a>
+            <a href="<?= base_url('kategori'); ?>" class="dropdown-item">Data Kategori</a>
+            <a href="<?= base_url('ruangan'); ?>" class="dropdown-item">Data Ruangan</a>
+            <a href="<?= base_url('gedung'); ?>" class="dropdown-item">Data Gedung</a>
           </div>
         </li>
 
