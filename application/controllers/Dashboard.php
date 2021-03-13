@@ -1,5 +1,5 @@
 <?php
-class Inventaris extends CI_Controller
+class Dashboard extends CI_Controller
 {
   public function index()
   {

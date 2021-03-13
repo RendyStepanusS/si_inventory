@@ -26,7 +26,7 @@
         <!-- menu inventaris -->
         <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fa big-icon fa-flask"></i> <span class="mini-dn">Inventaris</span> <span class="indicator-right-menu mini-dn"><i class="fa indicator-mn fa-angle-left"></i></span></a>
           <div role="menu" class="dropdown-menu left-menu-dropdown animated flipInX">
-            <a href="#" class="dropdown-item">Barang</a>
+            <a href="<?= base_url('inventaris_brg'); ?>" class="dropdown-item">Barang</a>
             <a href="#" class="dropdown-item">Bangunan</a>
             <a href="#" class="dropdown-item">Tanah</a>
           </div>

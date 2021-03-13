@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="footer-copy-right">
-          <p>Copyright &#169; 2021 STT SAPPI All rights reserved || SI Inventaris version 1.0.</p>
+          <p>Copyright &#169; 2021 STT SAPPI All rights reserved | SI Inventaris v1.0</p>
         </div>
       </div>
     </div>
